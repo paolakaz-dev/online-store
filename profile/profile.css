@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+/**Greys**/
+h2 a {
+  color: #303030;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h2 a:hover {
+  color: #e8a798;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+}
+
+a {
+  color: #303030;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+p {
+  color: #303030;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+@media screen and (min-width: 1224px) {
+  .body-profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    padding: 1em;
+    grid-gap: 1em;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.profile {
+  padding: 1em;
+  position: relative;
+}
+
+@media screen and (min-width: 1224px) {
+  .profile {
+    border: 1px solid #e6e6e6;
+  }
+}
+
+.profile-pink-container {
+  display: block;
+  background-color: #f2cec5;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.profile-image {
+  margin: 40px auto 0;
+  background-image: url(../graphics/andreea.svg);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile-name-wrap {
+  padding: 1em 0 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-name {
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  width: 25%;
+}
+
+.profile-links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 1224px) {
+  .profile-links {
+    display: none;
+  }
+}
+
+.profile-link {
+  border: 1px solid #f2cec5;
+  border-radius: 5px;
+  color: #e8a798;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.profile-icon {
+  position: relative;
+  top: 5px;
+}
+
+.profile-description {
+  font-size: .9rem;
+  padding: 1.5em 0;
+}
+
+.view {
+  padding: 5px 12px 12px;
+}
+
+.sell {
+  padding: 12px 12px 5px;
+}
+
+.info {
+  padding: 1em 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.info p {
+  font-size: .9rem;
+  padding: .5em;
+}
+
+.manage-plan {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px;
+  border: 1px solid #f2cec5;
+  border-radius: 5px;
+  color: #e8a798;
+  font-size: .8rem;
+  background-color: #FFF;
+  margin: 3em auto;
+  display: block;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1224px) {
+  .manage-plan {
+    margin: 3em 0 3em;
+  }
+}
+
+.profile-delete-link {
+  color: #e8a798 !important;
+}
+
+.sell-your-clothes {
+  display: none;
+}
+
+@media screen and (min-width: 1224px) {
+  .sell-your-clothes {
+    display: block;
+    padding: 2em;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+.sell-your-clothes-title {
+  font-size: 1.9rem;
+  color: #e8a798;
+  margin: 1em 0 1.8em;
+}
+
+.sell-your-clothes-form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.sell-your-clothes-file-upload {
+  border: none;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFF;
+  display: inline-block;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #f2cec5;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.sell-your-clothes-input {
+  font-family: "Montserrat";
+  border: 1px solid #e6e6e6;
+  padding: .8em;
+  border-radius: 5px;
+  font-size: .8rem;
+  font-weight: 700;
+  outline: none;
+  color: #e8a798;
+}
+
+.sell-your-clothes-input:focus {
+  color: #e8a798;
+  border-color: #f2cec5;
+  font-weight: 400;
+}
+
+.sell-your-clothes-input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.sell-your-clothes-input:-ms-input-placeholder {
+  color: #000;
+}
+
+.sell-your-clothes-input::-ms-input-placeholder {
+  color: #000;
+}
+
+.sell-your-clothes-input::placeholder {
+  color: #000;
+}
+
+.sell-your-clothes-submit {
+  display: block;
+  margin-top: 35px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: .8rem;
+  border: 1px solid #f2cec5;
+  color: #e8a798;
+  background-color: #FFF;
+  cursor: pointer;
+  outline: none;
+}
+
+.view-clothes {
+  display: none;
+}
+
+@media screen and (min-width: 1224px) {
+  .view-clothes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    overflow-y: scroll;
+    border-radius: 5px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 100%;
+    height: calc(100vh - 20vh);
+  }
+}
+
+.view-clothes-wrap {
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(253, 187, 45, 0)));
+  background: linear-gradient(0deg, white 0%, rgba(253, 187, 45, 0) 100%);
+}
+
+.view-clothes-image {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.view-clothes-inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.view-clothes-inputs p {
+  font-weight: 700;
+}
+
+.view-clothes-inputs input {
+  border: none;
+  padding: 5px 0;
+  color: #e8a798;
+  font-weight: 700;
+  outline: none;
+  font-size: .8rem;
+}
+
+.view-clothes-edit {
+  position: absolute;
+  bottom: 20px;
+  left: 12px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  outline: none;
+}
+
+.view-clothes-edit:hover {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+
+.view-clothes-camera-update {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  outline: none;
+}
+
+.view-clothes-delete {
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+  border: none;
+  background-color: rgba(253, 187, 45, 0);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  transition-outline: none;
+}
+
+.view-clothes-delete:hover {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+}
+
+.image-product {
+  width: 100%;
+}
+
+.container-grid-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.creditcardbtn {
+  margin: 0 auto !important;
+}
+
+.edit-inputs {
+  margin-top: .5em;
+  font-family: "Montserrat";
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: .8rem;
+  outline: none;
+  color: #000;
+  width: 100%;
+}
+
+.edit-inputs:focus {
+  color: #e8a798;
+  border-color: #f2cec5 !important;
+  font-weight: 400;
+}
+
+.edit-inputs::-webkit-input-placeholder {
+  color: #000;
+}
+
+.edit-inputs:-ms-input-placeholder {
+  color: #000;
+}
+
+.edit-inputs::-ms-input-placeholder {
+  color: #000;
+}
+
+.edit-inputs::placeholder {
+  color: #000;
+}
+
+.parag-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error {
+  border: 1px solid #f54066;
+  color: #f54066;
+}
+
+.error:focus {
+  color: #000;
+}
+
+.error::-webkit-input-placeholder {
+  color: #f54066;
+}
+
+.error:-ms-input-placeholder {
+  color: #f54066;
+}
+
+.error::-ms-input-placeholder {
+  color: #f54066;
+}
+
+.error::placeholder {
+  color: #f54066;
+}
+
+#error_message {
+  padding-top: 5px;
+  font-size: 12px;
+  color: #f54066;
+}
+
+.image-product {
+  display: none;
+}
+/*# sourceMappingURL=profile.css.map */
